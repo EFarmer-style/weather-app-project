@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/81c1a4cde7.js" crossorigin="anonymous"></script>
+    <title>Weather Application Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p class="Current">Current Weather
+                </p>
+      </header>
+      <form>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control city-search"
+            placeholder="Search a City  🕵🏼‍♀"
+          />
+          <br/> 
+        </div>
+      </form>
+      <section class="box">
+        <div class="box1">
+          <!--Current City-Temp-Date Card-->
+          <div class="card mb-3 current-city" style="max-width: 500px">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <h1>
+                  26°
+                  <br />
+                  
+                  <i class="fas fa-sun" style="color: #ffa000;"></i>
+                </h1>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Brisbane, Australia </h5>
+                  <p class="card-text">
+                    Sunday
+                    <br />
+                    🗓 14 Oct 2020
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Current city, close-->
+
+          <!--Current Weather Conditions-->
+          <div class="card mb-3 current-conditions" style="max-width: 500px">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <div class="card-body images">
+                  <h5 class="card-title">Condition</h5>
+                  <p class="card-image"><img src="images/Cartoon2.jpg" alt="perfectweather"></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-body more-info">
+                  <h5 class="card-title">Precipitation</h5>
+                  <p class="card-text">2%</p>
+                  <h5 class="card-title">Humidity</h5>
+                  <p class="card-text">66%</p>
+                  <h5 class="card-title">Wind</h5>
+                  <p class="card-text"> 3km/h</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Current conditions, close-->
+        </div>
+
+        <!--Predictions-->
+        <div class="box2">
+          <section class="predictions">
+            <div class="card mb-3" style="max-width: 500px">
+              <div class="row no-gutters">
+                <div class="col-md-12">
+                  <div class="card-body">
+                    <h4 class="card-title">Week Predictions 🔮</h4>
+                  </div>
+                  <!--Day 1 / Tomrorow-->
+                  <div class="card-body day1">
+                  <div class="row no-gutters">
+                    <div class="col-md-1">
+                      <div class="card-body"> Tomorrow<i class="fas fa-sun" style="color: #ffa000;"></i>
+                        <p class="card-text">25° </p>
+                        <div class="col-md-11">
+                        
+                    </div>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                    <!--Day 2 / Mon-->
+                    <div class="card-body day2">
+                    <div class="row no-gutters">
+                      <div class="col-md-1">
+                        <div class="card-body"> Mon: <i class="fas fa-cloud-sun" style="color: #ffe082;"></i>
+                          <p class="card-text">25° </p>
+                          <div class="col-md-11">
+                          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      <!--Day 3 / Tues-->
+                      <div class="card-body day3">
+                      <div class="row no-gutters">
+                        <div class="col-md-1">
+                          <div class="card-body"> Tues: <i class="fas fa-cloud-sun" style="color: #ffe082;"></i>
+                            <p class="card-text">21° </p>
+                            <div class="col-md-11">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        <!--Day 4 / Wed-->
+                        <div class="card-body day4">
+                        <div class="row no-gutters">
+                          <div class="col-md-1">
+                            <div class="card-body">Wed: <i class="fas fa-sun" style="color: #ffa000;"></i>
+                              <p class="card-text">21° </p>
+                              <div class="col-md-11">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                          <!--Day 5 / Thurs-->
+                          <div class="card-body day5">
+                          <div class="row no-gutters">
+                            <div class="col-md-1">
+                              <div class="card-body">Thurs: <i class="fas fa-cloud" style="color: #757575;"></i>
+                                <p class="card-text">23° </p>
+                                <div class="col-md-11">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+        <!--5 day forecast, close-->
+        </div>
+        </div>
+        </div>
+      </section>
+    <!--container, close-->
+    <script src="src/style.js"></script>
+  </body>
+</html>
